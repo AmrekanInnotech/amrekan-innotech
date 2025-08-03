@@ -12,22 +12,42 @@
   </style>
 </head>
 <body class="bg-white text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-gray-900 p-4 text-white sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center">
-      <a href="index.html" class="flex items-center space-x-4">
-        <img src="images/logo.png" alt="Amrekan Innotech Logo" class="h-10 w-auto" />
-        <span class="text-xl font-bold">Amrekan Innotech</span>
-      </a>
-      <nav class="space-x-6">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="services.html" class="hover:underline">Services</a>
-        <a href="about.html" class="hover:underline"  > About Us</a>
-        <a href="contact.html" class="hover:underline">Contact Us</a>
-      </nav>
-    </div>
-  </header>
+<!-- Header with logo -->
+<header class="bg-gray-900 p-4 text-white sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- ✅ Wrap logo + brand name in a link -->
+    <a href="index.html" class="flex items-center space-x-4">
+      <img src="images/logo.png" alt="Amrekan Innotech Logo" class="h-12 w-auto" />
+      <span class="text-xl font-bold">Amrekan Innotech</span>
+    </a>
+    <!-- Desktop Navigation -->
+    <nav class="space-x-6 hidden md:flex">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="about.html" class="hover:underline">About Us</a>
+      <a href="services.html" class="hover:underline">Services</a>
+      <a href="contact.html" class="hover:underline">Contact Us</a>
+    </nav>
+    <!-- Hamburger Icon for Mobile -->
+    <button class="md:hidden flex items-center px-3 py-2" aria-label="Open Menu" onclick="toggleMenu()">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+  <!-- Mobile Navigation -->
+  <nav id="mobile-menu" class="md:hidden hidden bg-gray-800 px-4 pb-4">
+    <a href="index.html" class="block py-2 hover:underline">Home</a>
+    <a href="about.html" class="block py-2 hover:underline">About Us</a>
+    <a href="services.html" class="hover:underline">Services</a>
+    <a href="contact.html" class="block py-2 hover:underline">Contact Us</a>
+  </nav>
+</header>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('mobile-menu');
+    nav.classList.toggle('hidden');
+  }
+</script>
 
   <!-- Hero Section -->
   <!-- About Us Banner -->
@@ -37,12 +57,12 @@
 
   <!-- Who We Are -->
   <section class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold mb-6 text-center">Who We Are</h2>
-    <p class="text-lg text-gray-700 mb-4">
-      Amrekan Innotech is a leading turnkey project consultancy firm, delivering world-class design, execution, and validation services across regulated sectors. With 25+ years of experience, our multidisciplinary team has executed complex Greenfield and Brownfield projects with precision.
+    <h2 class="text-3xl font-bold mb-6 text-center"><u>Who We Are</u></h2>
+    <p class="text-lg text-black-700 mb-4">
+      Amrekan Innotech is a leading turnkey project consultancy firm, delivering world-class design, execution, and validation services across regulated sectors Globally. With 25+ years of experience, our multidisciplinary team has executed complex Greenfield and Brownfield projects with precision.
     </p>
-    <p class="text-gray-700">
-      Our Director has served industries such as pharmaceuticals, API, biotech, R&D labs, food, cosmetics and logistics. Our projects adhere to global standards like USFDA, WHO-GMP, MHRA, TGA, and Schedule M, ensuring compliance and operational efficiency from concept to commissioning.
+    <p class="text-black-700">
+      Our Director has served industries such as pharmaceuticals, API, biotech, R&D labs, food, cosmetics and logistics. Our projects adhere to global standards like USFDA, WHO-GMP,UGMP,PICS, MHRA, TGA, and Schedule M, ensuring compliance and operational efficiency from concept to commissioning.
     </p>
   </section>
 
@@ -70,7 +90,7 @@
     <div class="grid md:grid-cols-3 gap-8 text-center">
       <div>
         <p class="text-5xl mb-2 text-blue-700">🛠️</p>
-        <h4 class="font-semibold text-lg mb-1">20+ Years of Experience</h4>
+        <h4 class="font-semibold text-lg mb-1">25+ Years of Experience</h4>
         <p class="text-sm text-gray-600">Proven track record in multi-industry engineering delivery.</p>
       </div>
       <div>
@@ -95,27 +115,27 @@
     <div class="inline-flex gap-4 min-w-full justify-center">
       
       <span class="bg-blue-100 text-blue-800 px-10 py-10 rounded-full text-sm transition-transform duration-300 transform hover:scale-110 cursor-pointer">
-        💊 Pharma
+        💊<strong>Pharma</strong> 
       </span>
 
       <span class="bg-blue-100 text-blue-800 px-10 py-10 rounded-full text-sm transition-transform duration-300 transform hover:scale-110 cursor-pointer">
-        ⚗️ API
+        ⚗️ <strong>API</strong>
       </span>
 
       <span class="bg-blue-100 text-blue-800 px-10 py-10 rounded-full text-sm transition-transform duration-300 transform hover:scale-110 cursor-pointer">
-        🧬 Biotech
+        🧬 <strong>Biotech</strong>
       </span>
 
       <span class="bg-blue-100 text-blue-800 px-10 py-10 rounded-full text-sm transition-transform duration-300 transform hover:scale-110 cursor-pointer">
-        🏥 Labs
+        🏥 <strong>Labs</strong>
       </span>
 
       <span class="bg-blue-100 text-blue-800 px-10 py-10 rounded-full text-sm transition-transform duration-300 transform hover:scale-110 cursor-pointer">
-        🧴 Food & Cosmetics
+        🧴 <strong>Food & Cosmetics</strong>
       </span>
 
       <span class="bg-blue-100 text-blue-800 px-10 py-10 rounded-full text-sm transition-transform duration-300 transform hover:scale-110 cursor-pointer">
-        📦 Logistics
+        📦 <strong>Logistics</strong>
       </span>
 
     </div>
@@ -131,11 +151,11 @@
     <div class="grid gap-10 md:grid-cols-2 text-center">
       <div>
         <h4 class="font-semibold text-lg">Mr. A.K. Singh</h4>
-        <p class="text-sm text-gray-600">Director | M.Tech | Project Management Expert</p>
+        <p class="text-sm text-gray-600">M.Tech | Director - Project Management Expert</p>
       </div>
       <div>
         <h4 class="font-semibold text-lg">Mr. Manjeet Singh</h4>
-        <p class="text-sm text-gray-600">M.Pharm | Regulatory & Production Strategist</p>
+        <p class="text-sm text-gray-600"> M.Pharm | Director- Regulatory & Compliant Strategist</p>
       </div>
       <div>
         
@@ -143,27 +163,44 @@
     </div>
   </section>
 
-   <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-12 px-6">
-    <div class="container mx-auto grid sm:grid-cols-2 gap-8">
-      <div>
-        <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
-        <p>Registered Office: 15/4 City Court,Zirakpur,PIN-140603</p>
-        <p>H.O:J-1/10 Second Floor, DDA Flats,Kalkaji, New Delhi,PIN-110019</p>
-        <p>Email: innotechamrekan@gmail.com</p>
-        <p>Phone: +91‑8288809350</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-4">Navigation</h3>
-        <a href="index.html" class="block hover:underline">Home</a>
-        <a href="services.html" class="block hover:underline">Services</a>
-        <a href="about.html" class="block hover:underline">About Us</a>
-        <a href="contact.html" class="block hover:underline">Contact Us</a>
-      </div>
+     <!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 px-4 sm:px-6">
+  <div class="container mx-auto flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8">
+    
+    <!-- Logo + Tagline -->
+    <div class="flex flex-col items-start text-left gap-2 w-full lg:w-[40%]">
+      <img src="images/logo.png" alt="Amrekan Innotech Logo" class="h-20 w-auto mb-1" />
+      <span class="text-base font-bold whitespace-nowrap mb-1">Amrekan Innotech</span>
+      <p class="text-xs leading-snug max-w-xs text-gray-400">
+        Turnkey project experts in pharma, biotech, labs, and logistics with 25+ years delivering USFDA, WHO-GMP, and MHRA-compliant solutions.
+      </p>
+      <a href="https://www.linkedin.com/in/amrekan-innotech-436021300/" target="_blank" rel="noopener" class="mt-2 inline-block">
+        <img src="images/linkedin.png" alt="LinkedIn" class="h-7 w-7" />
+      </a>
     </div>
-    <p class="text-center mt-8 text-sm">© 2025 Amrekan Innotech. All rights reserved.</p>
-  </footer>
 
-</body>
-</html> 
+    <!-- Contact Us -->
+    <div class="flex flex-col items-start text-left w-full lg:w-[40%]">
+      <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+      <p>Registered Office: 15/4 City Court, Zirakpur, Chandigarh, Pin-140603</p>
+      <p>H.O: J-1/10 Second Floor, DDA Flats, Kalkaji, New Delhi, Pin-110019</p>
+      <p>Email: 
+        <a href="mailto:info@innotechamrekan.com" class="hover:text-blue-400">info@innotechamrekan.com</a>, 
+        <a href="mailto:sales@innotechamrekan.com" class="hover:text-blue-400">sales@innotechamrekan.com</a>, 
+        <a href="mailto:innotechamrekan@gmail.com" class="hover:text-blue-400">innotechamrekan@gmail.com</a>
+      </p>
+      <p>Phone: <a href="tel:+918288809350" class="hover:text-blue-400">+91‑8288809350</a></p>
+    </div>
 
+    <!-- Navigation -->
+    <div class="flex flex-col items-start text-left w-full lg:w-[20%]">
+      <h3 class="text-xl font-semibold mb-4">Navigation</h3>
+      <a href="index.html" class="block hover:underline">Home</a>
+      <a href="about.html" class="block hover:underline">About Us</a>
+      <a href="services.html" class="hover:underline">Services</a>
+      <a href="contact.html" class="block hover:underline">Contact Us</a>
+    </div>
+
+  </div>
+  <p class="text-center mt-8 text-sm text-gray-400">© 2025 Amrekan Innotech. All rights reserved.</p>
+</footer>
