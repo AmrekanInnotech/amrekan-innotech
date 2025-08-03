@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services – Amrekan Innotech</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: auto; }
+
+    .card-inner {
+      transform-style: preserve-3d;
+    }
+
+    .card-front, .card-back {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+    }
+
+    .card-container:hover .card-inner,
+    .card-container.flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header (optional if reused globally) -->
+  <header class="bg-gray-900 text-white sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="Amrekan Innotech Logo" class="h-10 w-auto" />
+        <span class="text-xl font-bold">Amrekan Innotech</span>
+      </a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="about.html" class="hover:underline">About Us</a>
+        <a href="services.html" class="hover:underline font-semibold">Services</a>
+        <a href="contact.html" class="hover:underline">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Core Services Section -->
+  <section class="py-16 px-6 container mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-12">Our Core Services</h2>
+
+  <!-- First 4 cards in 2x2 grid -->
+  <div class="grid gap-10 md:grid-cols-2 max-w-4xl mx-auto">
+
+    <!-- CARD 1 -->
+    <div class="card-container group [perspective:1000px] cursor-pointer">
+      <div class="card-inner relative h-72 w-full transition-transform duration-700">
+        <div class="card-front absolute inset-0 p-6 rounded-xl shadow-lg bg-white flex flex-col justify-center items-center text-center">
+          <p class="text-5xl mb-2">🛠️</p>
+          <h3 class="text-xl font-semibold text-blue-700">Engineering & Design</h3>
+        </div>
+        <div class="card-back absolute inset-0 p-6 rounded-xl shadow-xl bg-blue-50 overflow-y-auto">
+          <ul class="list-disc text-left text-black-700 space-y-2 pl-6 text-sm">
+            <li><strong>Site Feasibility & Selection</strong></li>
+            <li><strong>Conceptual Layout</strong></li>
+            <li><strong>Basis Of Design</strong></li>
+            <li><strong>Basic Engineering</strong></li>
+            <li><strong>Detail Engineering</strong></li>
+            <li><strong>Risk Assessment</strong></li>
+            <li><strong>Energy Saving By Design</strong></li>
+            <li><strong>Quality By Design</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card-container group [perspective:1000px] cursor-pointer">
+      <div class="card-inner relative h-72 w-full transition-transform duration-700">
+        <div class="card-front absolute inset-0 p-6 rounded-xl shadow-lg bg-white flex flex-col justify-center items-center text-center">
+          <p class="text-5xl mb-2">🏗️</p>
+          <h3 class="text-xl font-semibold text-blue-700">Project Management</h3>
+        </div>
+        <div class="card-back absolute inset-0 p-6 rounded-xl shadow-xl bg-blue-50 overflow-y-auto">
+          <ul class="list-disc text-left text-black-700 space-y-2 pl-6 text-sm">
+            <li><strong>Contractor/Vendor finalization</strong></li>
+            <li><strong>Construction supervision</strong></li>
+            <li><strong>Equipment Placement</strong></li>
+            <li><strong>Installation & Commissioning</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card-container group [perspective:1000px] cursor-pointer">
+      <div class="card-inner relative h-72 w-full transition-transform duration-700">
+        <div class="card-front absolute inset-0 p-6 rounded-xl shadow-lg bg-white flex flex-col justify-center items-center text-center">
+          <p class="text-5xl mb-2">🧾</p>
+          <h3 class="text-xl font-semibold text-blue-700">Validation & Documentation</h3>
+        </div>
+        <div class="card-back absolute inset-0 p-6 rounded-xl shadow-xl bg-blue-50 overflow-y-auto">
+          <ul class="list-disc text-left text-black-700 space-y-2 pl-6 text-sm">
+            <li><strong>SMF</strong></li>
+            <li><strong>VMP</strong></li>
+            <li><strong>CSV</strong></li>
+            <li><strong>Scada & PLC Validation</strong></li>
+            <li><strong>QMS Documents</strong></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card-container group [perspective:1000px] cursor-pointer">
+      <div class="card-inner relative h-72 w-full transition-transform duration-700">
+        <div class="card-front absolute inset-0 p-6 rounded-xl shadow-lg bg-white flex flex-col justify-center items-center text-center">
+          <p class="text-5xl mb-2">💼</p>
+          <h3 class="text-xl font-semibold text-blue-700">Consulting & Support</h3>
+        </div>
+        <div class="card-back absolute inset-0 p-6 rounded-xl shadow-xl bg-blue-50 overflow-y-auto">
+          <ul class="list-disc text-left text-black-700 space-y-2 pl-6 text-sm">
+            <li><strong>Budgeting</strong></li>
+            <li><strong>Techno-commercial evaluation</strong></li>
+            <li><strong>Regulatory Audits</strong></li>
+            <li><strong>Energy Audits</strong></li>
+            <li><strong>Fire & Safety</strong></li>
+            <li><strong>Electrical</strong></li>
+            <li><strong>Environmental</strong></li>
+            <li><strong>Dosier Filling Globally</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CARD 5 centered below -->
+  <div class="mt-10 flex justify-center">
+    <div class="card-container group [perspective:1000px] cursor-pointer w-full max-w-md">
+      <div class="card-inner relative h-72 w-full transition-transform duration-700">
+        <div class="card-front absolute inset-0 p-6 rounded-xl shadow-lg bg-white flex flex-col justify-center items-center text-center">
+          <p class="text-5xl mb-2">🏢</p>
+          <h3 class="text-xl font-semibold text-blue-700">Integrated Turnkey Solutions</h3>
+        </div>
+        <div class="card-back absolute inset-0 p-6 rounded-xl shadow-xl bg-blue-50 overflow-y-auto">
+          <ul class="list-disc text-left text-black-700 space-y-2 pl-6 text-sm">
+            <li><strong>One-window project delivery</strong></li>
+            <li><strong>Concept to Commercial Batch</strong></li>
+            <li><strong>Cost, time, and quality control</strong></li>
+            <li><strong>Cross-discipline integration</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Industry Solutions -->
+ <section class="py-16 px-6 bg-gray-100">
+  <h2 class="text-3xl font-bold text-center mb-12">Industry Solutions</h2>
+
+  <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+
+    <!-- CARD 1 -->
+    <div class="card-container group [perspective:1000px] cursor-pointer">
+      <div class="card-inner relative h-64 w-full transition-transform duration-700">
+        <div class="card-front absolute inset-0 p-6 rounded-xl shadow-md bg-white flex flex-col justify-center items-center text-center">
+          <p class="text-4xl">💊</p>
+          <h3 class="text-lg font-semibold text-blue-700 mt-2">Pharmaceuticals & API</h3>
+        </div>
+        <div class="card-back absolute inset-0 p-6 rounded-xl shadow-md bg-blue-50 [transform:rotateY(180deg)] overflow-y-auto">
+          <ul class="list-disc text-left text-black-700 space-y-2 pl-6 text-sm">
+            <li><strong>GMP/USFDA/PICS compliance</strong></li>
+            <li><strong>Non-sterile setups</strong></li>
+            <li><strong>Cleanroom & HVAC layouts</strong></li>
+            <li><strong>Modular facility support</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card-container group [perspective:1000px] cursor-pointer">
+      <div class="card-inner relative h-64 w-full transition-transform duration-700">
+        <div class="card-front absolute inset-0 p-6 rounded-xl shadow-md bg-white flex flex-col justify-center items-center text-center">
+          <p class="text-4xl">🧪</p>
+          <h3 class="text-lg font-semibold text-blue-700 mt-2">Biotech & R&D Labs</h3>
+        </div>
+        <div class="card-back absolute inset-0 p-6 rounded-xl shadow-md bg-blue-50 [transform:rotateY(180deg)] overflow-y-auto">
+          <ul class="list-disc text-left text-black-700 space-y-2 pl-6 text-sm">
+            <li><strong>R&D and QC lab setup</strong></li>
+            <li><strong>Pilot plant environments</strong></li>
+            <li><strong>Microbiology & QA support</strong></li>
+            <li><strong>Validation-ready infrastructure</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card-container group [perspective:1000px] cursor-pointer">
+      <div class="card-inner relative h-64 w-full transition-transform duration-700">
+        <div class="card-front absolute inset-0 p-6 rounded-xl shadow-md bg-white flex flex-col justify-center items-center text-center">
+          <p class="text-4xl">🧴</p>
+          <h3 class="text-lg font-semibold text-blue-700 mt-2">Food & Cosmetics</h3>
+        </div>
+        <div class="card-back absolute inset-0 p-6 rounded-xl shadow-md bg-blue-50 [transform:rotateY(180deg)] overflow-y-auto">
+          <ul class="list-disc text-left text-black-700 space-y-2 pl-6 text-sm">
+            <li><strong>FSSAI-compliant layouts</strong></li>
+            <li><strong>Personal care plants</strong></li>
+            <li><strong>Herbal & nutraceutical units</strong></li>
+            <li><strong>Clean process flow</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card-container group [perspective:1000px] cursor-pointer">
+      <div class="card-inner relative h-64 w-full transition-transform duration-700">
+        <div class="card-front absolute inset-0 p-6 rounded-xl shadow-md bg-white flex flex-col justify-center items-center text-center">
+          <p class="text-4xl">🧊</p>
+          <h3 class="text-lg font-semibold text-blue-700 mt-2">Warehouse & Cold Storage</h3>
+        </div>
+        <div class="card-back absolute inset-0 p-6 rounded-xl shadow-md bg-blue-50 [transform:rotateY(180deg)] overflow-y-auto">
+          <ul class="list-disc text-left text-black-700 space-y-2 pl-6 text-sm">
+            <li><strong>Temperature-controlled zones</strong></li>
+            <li><strong>Clean and dry warehousing</strong></li>
+            <li><strong>Modular racking systems</strong></li>
+            <li><strong>GMP documentation zones</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+  <!-- Mobile Flip Script -->
+  <script>
+    document.querySelectorAll('.card-container').forEach(card => {
+      card.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          card.classList.toggle('flipped');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+  <!-- Footer -->
+   <!-- Footer -->
+<footer class="bg-gray-200 text-black py-12 px-6">
+  <div class="container mx-auto grid sm:grid-cols-2 gap-8">
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+      <p>Registered Office: 15/4 City Court, Zirakpur, Chandigarh, Pin-140603</p>
+      <p>H.O: J-1/10 Second Floor, DDA Flats, Kalkaji, New Delhi, Pin-110019</p>
+      <p>Email: info@innotechamrekan.com, sales@innotechamrekan.com, innotechamrekan@gmail.com</p>
+      <p>Phone: +91‑8288809350</p>
+       <div class="mt-4">
+        <a href="http://www.linkedin.com/in/amrekan-innotech-436021300" target="_blank" class="inline-flex items-center space-x-2 hover:underline">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 filter invert" />
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Navigation</h3>
+      <a href="index.html" class="block hover:underline">Home</a>
+      <a href="about.html" class="block hover:underline">About Us</a>
+      <a href="services.html" class="block hover:underline">Services</a>
+      <a href="contact.html" class="block hover:underline">Contact Us</a>
+     
+    </div>
+  </div>
+
+  <p class="text-center mt-8 text-sm">© 2025 Amrekan Innotech. All rights reserved.</p>
+</footer>
+
+
+
+   <!-- Mobile Flip Script -->
+  <script>
+    document.querySelectorAll('.card-container').forEach(card => {
+      card.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          card.classList.toggle('flipped');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
