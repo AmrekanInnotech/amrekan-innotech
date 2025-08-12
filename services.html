@@ -30,21 +30,23 @@
 </head>
 <body class="bg-white text-gray-800">
 
-  <!-- Header with logo -->
+<!-- Header with logo -->
 <header class="bg-gray-900 p-4 text-white sticky top-0 z-50">
   <div class="container mx-auto flex justify-between items-center">
-    <!-- ✅ Wrap logo + brand name in a link -->
-    <a href="index.html" class="flex items-center space-x-4">
+    <!-- Logo + Brand -->
+    <a href="/" class="flex items-center space-x-4">
       <img src="images/logo.png" alt="Amrekan Innotech Logo" class="h-12 w-auto" />
       <span class="text-xl font-bold">Amrekan Innotech</span>
     </a>
+
     <!-- Desktop Navigation -->
     <nav class="space-x-6 hidden md:flex">
-      <a href="index.html" class="hover:underline">Home</a>
-      <a href="about.html" class="hover:underline">About Us</a>
-      <a href="services.html" class="hover:underline">Services</a>
-      <a href="contact.html" class="hover:underline">Contact Us</a>
+      <a href="/" class="hover:underline">Home</a>
+      <a href="/about" class="hover:underline">About Us</a>
+      <a href="/services" class="hover:underline">Services</a>
+      <a href="/contact" class="hover:underline">Contact Us</a>
     </nav>
+
     <!-- Hamburger Icon for Mobile -->
     <button class="md:hidden flex items-center px-3 py-2" aria-label="Open Menu" onclick="toggleMenu()">
       <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -52,20 +54,24 @@
       </svg>
     </button>
   </div>
+
   <!-- Mobile Navigation -->
   <nav id="mobile-menu" class="md:hidden hidden bg-gray-800 px-4 pb-4">
-   <a href="index.html" class="block py-2 hover:underline">Home</a>
-<a href="about.html" class="block py-2 hover:underline">About Us</a>
-<a href="services.html" class="block py-2 hover:underline">Services</a>
-<a href="contact.html" class="block py-2 hover:underline">Contact Us</a>
+    <a href="/" class="block py-1 hover:underline">Home</a>
+    <a href="/about" class="block py-1 hover:underline">About Us</a>
+    <a href="/services" class="block py-1 hover:underline">Services</a>
+    <a href="/contact" class="block py-1 hover:underline">Contact Us</a>
   </nav>
 </header>
+
+<!-- JS -->
 <script>
   function toggleMenu() {
     const nav = document.getElementById('mobile-menu');
     nav.classList.toggle('hidden');
   }
 </script>
+
 
   <!-- Core Services Section -->
   <section class="py-16 px-6 container mx-auto">
@@ -328,6 +334,7 @@
 
 </body>
 </html>
+
 
 
 
