@@ -14,18 +14,18 @@
 <!-- Header with logo -->
 <header class="bg-gray-900 p-4 text-white sticky top-0 z-50">
   <div class="container mx-auto flex justify-between items-center">
-    <!-- Logo + Brand -->
-    <a href="/" class="flex items-center space-x-4">
+    <!-- ✅ Wrap logo + brand name in a link -->
+    <a href="index.html" class="flex items-center space-x-4">
       <img src="images/logo.png" alt="Amrekan Innotech Logo" class="h-12 w-auto" />
       <span class="text-xl font-bold">Amrekan Innotech</span>
     </a>
 
     <!-- Desktop Navigation -->
     <nav class="space-x-6 hidden md:flex">
-      <a href="/" class="hover:underline">Home</a>
-      <a href="/about" class="hover:underline">About Us</a>
-      <a href="/services" class="hover:underline">Services</a>
-      <a href="/contact" class="hover:underline">Contact Us</a>
+      <a href="index.html" class="hover:underline py-1">Home</a>
+      <a href="about.html" class="hover:underline py-1">About Us</a>
+      <a href="services.html" class="hover:underline py-1">Services</a>
+      <a href="contact.html" class="hover:underline py-1">Contact Us</a>
     </nav>
 
     <!-- Hamburger Icon for Mobile -->
@@ -37,15 +37,14 @@
   </div>
 
   <!-- Mobile Navigation -->
-  <nav id="mobile-menu" class="md:hidden hidden bg-gray-800 px-4 pb-4">
-    <a href="/" class="block py-1 hover:underline">Home</a>
-    <a href="/about" class="block py-1 hover:underline">About Us</a>
-    <a href="/services" class="block py-1 hover:underline">Services</a>
-    <a href="/contact" class="block py-1 hover:underline">Contact Us</a>
+  <nav id="mobile-menu" class="md:hidden hidden bg-gray-800 px-4 pb-4 flex flex-col">
+    <a href="index.html" class="hover:underline py-1">Home</a>
+    <a href="about.html" class="hover:underline py-1">About Us</a>
+    <a href="services.html" class="hover:underline py-1">Services</a>
+    <a href="contact.html" class="hover:underline py-1">Contact Us</a>
   </nav>
 </header>
 
-<!-- JS -->
 <script>
   function toggleMenu() {
     const nav = document.getElementById('mobile-menu');
@@ -106,6 +105,7 @@
 
 </body>
 </html>
+
 
 
 
